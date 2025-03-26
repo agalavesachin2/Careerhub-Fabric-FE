@@ -5,23 +5,26 @@ function SuperUserSection({ SubNavigationData }: { SubNavigationData: any }) {
 
   return (
     <div id="participate">
-    <div className="participate">
-      {/* Left: Text Content */}
-      <div className="participate-content">
-        <div className="participate-heading-subheading">
-          <h2 className="how-to-participate">{sectionTitle}</h2>
-          <p className="participate-description">{description}</p>
-          {ctaButtonText && ctaButtonLink && (
-            <a href={ctaButtonLink} className="get-started" target="_blank" aria-label="Get Started">
-              <span className="get-started-text">{ctaButtonText}</span>
-            </a>
-          )}
+      <div className="participate">
+        {/* Left: Text Content */}
+        <div className="participate-content">
+          <div className="participate-heading-subheading">
+            <h2 className="how-to-participate">{sectionTitle}</h2>
+            <p className="participate-description">{description}</p>
+            {/* Button Wrapper */}
+            {ctaButtonText && ctaButtonLink && (
+              <div className="button-wrapper">  
+                <a href={ctaButtonLink} className="get-started" target="_blank" aria-label="Get Started">
+                  <span className="get-started-text">{ctaButtonText}</span>
+                </a>
+              </div>
+            )}
+          </div>
         </div>
-      </div>
 
-      {/* Right: Image Section */}
-      <div className="participate-image" style={{ backgroundImage: `url(${imageUrl})` }}></div>
-    </div>
+        {/* Right: Image Section */}
+        <div className="participate-image" style={{ backgroundImage: `url(${imageUrl})` }}></div>
+      </div>
     </div>
   );
 }

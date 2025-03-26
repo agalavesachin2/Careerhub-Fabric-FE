@@ -22,7 +22,7 @@ function HeroBanner({ HeroBannerData }: any) {
       <div className="ch-hero-banner">
         <div className="ch-hero-banner-wp">
           <picture>
-            {imageSources.forEach(({ srcSet, media }, index) => (
+            {imageSources.map(({ srcSet, media }, index) => (
               <source key={index} srcSet={srcSet} media={media} />
             ))}
             <img

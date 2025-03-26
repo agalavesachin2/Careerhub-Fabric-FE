@@ -1,134 +1,242 @@
+/*Hero banner - flex class*/
+.career-hub-hero-banner {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    background-color: #FFFFFF;
+    display: flex;
+}
+
+.ch-hero-banner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.ch-hero-banner-wp {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.ch-hero-banner picture {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.ch-hero-banner picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ch-hero-banner-container {
+    align-items: center; 
+    flex-direction: column;
+    justify-content: center;
+    left: 28%;
+    text-align: center;
+    top: 50%;
+}
+
+.ch-hero-banner-content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.ch-hero-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.public_preview_text {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    color: #323130;
+}
+
+.ch-hero-text-wrapper h1 {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40px;
+    color: #323130;
+}
+
+.ch-hero-text-wrapper p {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #323130;
+}
+
+.ch-hero-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    padding: 6px 20px;
+    width: 174px;
+    height: 32px;
+    background: #000000;
+    color: #FFFFFF;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.ch-hero-button:hover {
+    background: #333333;
+}
+
+.ch-hero-button img {
+    width: 16px;
+    height: 16px;
+}
+
+.public-preview-banner {
+    display: flex !important;
+    text-align: center !important;
+    flex-direction: column !important;
+}
 /* =============================
    Participate Section - New Figma Design
 ============================= */
 .participate {
-    align-items: center;
-    align-self: stretch;
-    border-radius: 16px;
     display: flex;
-    flex: none;
     flex-direction: row;
-    flex-grow: 0;
+    align-items: stretch;
+    justify-content: space-between;
+    border-radius: 16px;
     height: 348px;
-    order: 0;
     padding: 44px;
-  }
-  
-  /* =============================
-     Content Section - Left Side
-  ============================= */
-  .participate-content {
-    /* display: flex;
-    flex-direction: column; */
+    gap: 20px;
+    background: #f5f5f5;  /* Added a background for better visibility */
+}
+
+/* =============================
+   Content Section - Left Side
+============================= */
+.participate-content {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding: 0px 48px;
     gap: 24px;
-    width: 560px;
-    height: 292px;
+    width: 50%;
     background: linear-gradient(225deg, #ffffff 10.9%, #e8e6df 100%);
-    align-self: stretch;
-    flex-grow: 1;
     border-radius: 20px;
-  }
-  
-  /* =============================
-     Heading + Subheading
-  ============================= */
-  .participate-heading-subheading {
-    /* display: flex;
-    flex-direction: column; */
-    align-items: flex-start;
-    padding: 20px;
-    gap: 8px;
-    /* width: 464px; */
-    /* height: 120px; */
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
-  }
-  
-  /* =============================
-     Title: How to Participate
-  ============================= */
-  .how-to-participate {
+    padding: 40px;
+}
+
+/* =============================
+   Heading + Subheading
+============================= */
+.participate-heading-subheading {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;  /* Increased gap for better spacing */
+    width: 100%;
+}
+
+/* =============================
+   Title: How to Participate
+============================= */
+.how-to-participate {
     font-family: 'Segoe UI', sans-serif;
-    font-style: normal;
     font-weight: 600;
     font-size: 24px;
     line-height: 32px;
     color: #000000;
-    width: 464px;
-    height: 32px;
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
-  }
-  
-  /* =============================
-     Description Text
-  ============================= */
-  .participate-description {
+    margin: 0;
+}
+
+/* =============================
+   Description Text
+============================= */
+.participate-description {
     font-family: 'Segoe UI', sans-serif;
-    font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 20px;
     color: #000000;
-    width: 464px;
-    height: 80px;
-    flex: none;
-    order: 1;
-    align-self: stretch;
-    flex-grow: 0;
-  }
-  
-  /* =============================
-     Get Started Button
-  ============================= */
-  .get-started {
-    /* display: flex;
-    flex-direction: row; */
+    margin: 0;
+}
+
+/* =============================
+   Button Wrapper for Proper Alignment
+============================= */
+.button-wrapper {
+    display: flex;
+    justify-content: flex-start;   /* Aligns button to the left */
+    width: 100%;
+}
+
+/* =============================
+   Get Started Button (Transparent)
+============================= */
+.get-started {
+    display: inline-flex;
     justify-content: center;
     align-items: center;
-    padding: 6px 20px;
+    padding: 10px 24px;
     gap: 4px;
-    width: 174px;
-    height: 32px;
-    border: 1px solid #000000;
+    
+    /* Transparent button with black border */
+    background: transparent;
+    color: #000000;                   /* Black text */
+    border: 1px solid #000000;        /* Black border */
     border-radius: 4px;
-    box-sizing: border-box;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
+    text-decoration: none;
+
+    /* Transition for smooth hover effect */
+    transition: background 0.3s, color 0.3s;
     cursor: pointer;
-  }
-  
-  /* Get Started Text */
-  .get-started-text {
+}
+
+/* Hover and focus effect */
+.get-started:hover,
+.get-started:focus {
+    background: #F3F3F3;              /* Light grey background on hover */
+    color: #000000;                   /* Black text */
+    border-color: #000000;            /* Keep the black border */
+}
+
+/* Button Text Styling */
+.get-started-text {
     font-family: 'Segoe UI', sans-serif;
-    font-style: normal;
     font-weight: 600;
     font-size: 14px;
     line-height: 20px;
-    color: #000000;
-  }
-  
-  /* =============================
-     Right Side: Trophy Image
-  ============================= */
-  .participate-image {
-    width: 560px;
-    height: 257px;
-    background: url(/html/assets/careerhubTrophyNew.png) no-repeat 50%;
+    color: #000000;                   /* Black text */
+}
+
+
+/* =============================
+   Right Side: Trophy Image
+============================= */
+.participate-image {
+    width: 50%;
+    height: auto;
+    background: url(/html/assets/careerhubTrophyNew.png) no-repeat center;
     background-size: cover;
     border-radius: 0 16px 16px 0;
-    flex: none;
-    order: 1;
-    flex-grow: 1;
-  }
+}
 
   /* =============================
    General Card - Contest Winners Section
@@ -462,12 +570,10 @@
     .participate {
         flex-direction: column;
         padding: 24px;
-        height: auto;
     }
 
     .participate-content {
         width: 100%;
-        height: auto;
         padding: 20px;
         text-align: center;
     }
@@ -547,10 +653,6 @@
         padding: 20px;
     }
 
-    .get-started {
-        width: 100%;
-        text-align: center;
-    }
 
     .participate-content {
         padding: 16px;
@@ -596,12 +698,6 @@
 
     .participate-description {
         font-size: 13px;
-    }
-
-    .get-started {
-        font-size: 13px;
-        height: auto;
-        padding: 8px;
     }
 
     .contest-winners-section {

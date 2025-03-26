@@ -67,7 +67,7 @@ const BringingOpportunity = ({ BringingOppurtunityCC }: any) => {
       <div>
         <h2 className="getinspired-heading">{ChNewinspiredHeading}</h2>
       </div>
-      <div style={{ width: 'auto' }}
+      <div
         className="bringing_opportunities_section"
         role="region"
         aria-label={BOHeading}
