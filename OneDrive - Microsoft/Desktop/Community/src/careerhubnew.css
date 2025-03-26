@@ -1,0 +1,646 @@
+/* =============================
+   Participate Section - New Figma Design
+============================= */
+.participate {
+    align-items: center;
+    align-self: stretch;
+    border-radius: 16px;
+    display: flex;
+    flex: none;
+    flex-direction: row;
+    flex-grow: 0;
+    height: 348px;
+    order: 0;
+    padding: 44px;
+  }
+  
+  /* =============================
+     Content Section - Left Side
+  ============================= */
+  .participate-content {
+    /* display: flex;
+    flex-direction: column; */
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px 48px;
+    gap: 24px;
+    width: 560px;
+    height: 292px;
+    background: linear-gradient(225deg, #ffffff 10.9%, #e8e6df 100%);
+    align-self: stretch;
+    flex-grow: 1;
+    border-radius: 20px;
+  }
+  
+  /* =============================
+     Heading + Subheading
+  ============================= */
+  .participate-heading-subheading {
+    /* display: flex;
+    flex-direction: column; */
+    align-items: flex-start;
+    padding: 20px;
+    gap: 8px;
+    /* width: 464px; */
+    /* height: 120px; */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+  
+  /* =============================
+     Title: How to Participate
+  ============================= */
+  .how-to-participate {
+    font-family: 'Segoe UI', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #000000;
+    width: 464px;
+    height: 32px;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+  
+  /* =============================
+     Description Text
+  ============================= */
+  .participate-description {
+    font-family: 'Segoe UI', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+    width: 464px;
+    height: 80px;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+  
+  /* =============================
+     Get Started Button
+  ============================= */
+  .get-started {
+    /* display: flex;
+    flex-direction: row; */
+    justify-content: center;
+    align-items: center;
+    padding: 6px 20px;
+    gap: 4px;
+    width: 174px;
+    height: 32px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    box-sizing: border-box;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    cursor: pointer;
+  }
+  
+  /* Get Started Text */
+  .get-started-text {
+    font-family: 'Segoe UI', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+  }
+  
+  /* =============================
+     Right Side: Trophy Image
+  ============================= */
+  .participate-image {
+    width: 560px;
+    height: 257px;
+    background: url(/html/assets/careerhubTrophyNew.png) no-repeat 50%;
+    background-size: cover;
+    border-radius: 0 16px 16px 0;
+    flex: none;
+    order: 1;
+    flex-grow: 1;
+  }
+
+  /* =============================
+   General Card - Contest Winners Section
+============================= */
+.contest-winners-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px; /* Adjusted for better spacing */
+    gap: 24px;
+    /* max-width: 1120px; */
+}
+
+.contest-winners {
+    /* display: flex;
+    flex-direction: column; */
+    align-items: center;
+    padding: 20px;
+    gap: 24px;
+    width: 100%;
+}
+
+/* =============================
+   Heading & Subheading Section
+============================= */
+/* Contest Winners Section */
+.contest-winners-section .heading-subheading {
+    /* display: flex;
+    flex-direction: column; */
+    align-items: center;
+    text-align: center;
+    gap: 8px;
+    width: 100%;
+    /* max-width: 1120px; */
+}
+
+.contest-winners-section .heading {
+    font-family: 'Segoe UI', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #000000;
+    margin: 0;
+}
+
+/* =============================
+   Content Row - Cards Layout
+============================= */
+.content-row {
+    display: flex;
+    justify-content: center;
+    gap: 53px;
+    flex-wrap: wrap; /* Enables responsiveness */
+    /* padding: 0 20px; */
+}
+
+/* =============================
+   Card Layout & Design
+============================= */
+.content-layout {
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+    max-width: 251px;
+    min-height: 348px;
+    /* padding: 16px; */
+    gap: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background: #ffffff;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Hover effect */
+.content-layout:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* =============================
+   Image/Graphic Section
+============================= */
+.graphic {
+    width: 100%;
+    height: 196px;
+    background: url(/html/assets/careerhubnew_Graphic.png), linear-gradient(225deg, #FFFFFF 10.9%, #E8E6DF 100%);
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+}
+
+/* Image hover effect */
+.graphic:hover {
+    filter: brightness(0.95);
+    transition: filter 0.2s ease-in-out;
+}
+
+/* =============================
+   Text Section Inside Cards
+============================= */
+.text {
+    /* display: flex; */
+    /* flex-direction: column; */
+    align-items: center;
+    text-align: center;
+    padding: 16px;
+    width: 100%;
+    gap: 16px;
+}
+
+/* Frame for text content */
+.frame-2018777074 {
+    /* display: flex;
+    flex-direction: column; */
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+}
+
+/* =============================
+   Button Styles
+============================= */
+.button-text {
+    font-family: 'Segoe UI', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #000000;
+    display: block;
+    padding: 10px 16px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Button hover effect */
+.button-text:hover {
+    background-color: #e0e0e0;
+}
+
+/* =============================
+   Vector Styling
+============================= */
+.vector-button-text {
+    display: inline-flex;
+    align-items: center;
+    font-family: 'Segoe UI', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+    text-decoration: none;
+    gap: 5px;
+
+    img {
+        width: 14px;
+        height: 14px;
+    }
+
+    /* Optional hover effect */
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.sticky-nav-border-active {
+    border-bottom: 4px solid #117865;
+}
+
+.getinspired-heading {
+    text-align: center;
+    color: #000;
+    font-family: Segoe UI, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+}
+/*This is overridden class from careerhub.css for slick arrows.*/
+.slick-prev:before, .slick-next:before {
+    font-family: slick !important;
+    font-size: 20px !important;
+    line-height: 1 !important;
+    opacity: .75 !important;
+    color: #100e0e !important;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+}
+
+.rectangle-35794 {
+    /* Rectangle 35794 */
+    width: 1px;
+    height: 23px;
+    background: #D9D9D9;
+    flex: none;
+    flex-grow: 0;
+}
+
+/*This is end section for the overridden class*/
+/* FAQ Section Container */
+.faq-section {
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;                    
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 20px;
+
+    /* FAQ Header */
+    .faq-header {
+        padding: 16px 0;
+        text-align: center;
+        width: 100%;
+
+        h2 {
+            font-size: 28px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        p {
+            font-family: 'Segoe UI', sans-serif;  
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0%;
+            vertical-align: middle;
+        }
+    }
+
+    /* FAQ Buttons */
+    .faq-buttons {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 0;
+
+        button {
+            align-items: center;
+            display: flex;
+            justify-content: flex-end;
+            background: none;
+            border: none;
+            color: #000;
+            font-size: 14px;
+            cursor: pointer;
+            padding: 4px 8px;
+            text-decoration: underline;
+        }
+    }
+
+    /* FAQ Items */
+    .faq-item {
+        padding: 16px 0;
+        /* border-bottom: 1px solid #e0e0e0; */
+        transition: all 0.3s ease;
+
+        &:hover {
+            background: #f9f9f9;
+        }
+
+        .faq-question {
+            cursor: pointer;
+            display: flex;
+            font-family: Segoe UI;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0%;
+            vertical-align: middle;
+        
+            svg {                             
+                width: 24px;
+                height: 24px;
+                transition: transform 0.3s;
+            }
+        
+            p {                               
+                margin: 0;
+                line-height: 1.5;            
+            }
+        
+            &.open svg {
+                transform: rotate(180deg);    
+            }
+        }
+        
+        .faq-answer {
+            font-family: Segoe UI;
+            font-size: 14px;
+            font-weight: 400;
+            letter-spacing: 0;
+            line-height: 20px;
+        }
+
+        /* Chevron Icons */
+        .faq-chevron {
+            transition: transform 0.3s;
+        }
+
+        &.open {
+            .faq-chevron {
+                transform: rotate(180deg);
+            }
+        }
+    }
+}
+
+/* #lia-body .lia-top-quilt>.lia-quilt-row-header .lia-quilt-row.lia-quilt-row-top-header {
+    margin-bottom: auto !important;
+} */
+#lia-body .lia-quilt-row.lia-quilt-row-header {
+    display: none !important;
+}
+
+#lia-body .common_pageTitle {
+    display: none !important;
+}
+
+
+/* ================================
+   Responsive Adjustments - Mobile
+================================ */
+@media (max-width: 1024px) {
+    /* Participate Section */
+    .participate {
+        flex-direction: column;
+        padding: 24px;
+        height: auto;
+    }
+
+    .participate-content {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .how-to-participate,
+    .participate-description {
+        width: 100%;
+    }
+
+    .participate-image {
+        width: 100%;
+        height: 200px;
+        border-radius: 16px;
+    }
+
+    /* Contest Winners Section */
+    .contest-winners-section {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .contest-winners-section .heading-subheading {
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .content-row {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .content-layout {
+        width: 100%;
+        max-width: 360px;
+        min-height: auto;
+    }
+
+    /* Images */
+    .graphic {
+        height: auto;
+        min-height: 150px;
+    }
+
+    /* FAQ Section */
+    .faq-section {
+        padding: 30px 15px;
+    }
+
+    .faq-header h2 {
+        font-size: 22px;
+    }
+
+    .faq-buttons {
+        justify-content: center;
+    }
+
+    .faq-item {
+        padding: 12px 0;
+    }
+
+    .faq-question {
+        font-size: 14px;
+    }
+
+    .faq-answer {
+        font-size: 14px;
+    }
+}
+
+/* ================================
+   Smaller Screens (Mobile)
+================================ */
+@media (max-width: 768px) {
+    /* General Adjustments */
+    .participate {
+        padding: 20px;
+    }
+
+    .get-started {
+        width: 100%;
+        text-align: center;
+    }
+
+    .participate-content {
+        padding: 16px;
+    }
+
+    .contest-winners-section {
+        padding: 15px;
+    }
+
+    .content-layout {
+        max-width: 300px;
+    }
+
+    .graphic {
+        min-height: 120px;
+    }
+
+    .faq-header h2 {
+        font-size: 20px;
+    }
+
+    .faq-question {
+        font-size: 13px;
+    }
+}
+
+/* ================================
+   Very Small Screens (Mobile)
+================================ */
+@media (max-width: 480px) {
+    .participate {
+        padding: 15px;
+    }
+
+    .participate-content {
+        padding: 10px;
+    }
+
+    .how-to-participate {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .participate-description {
+        font-size: 13px;
+    }
+
+    .get-started {
+        font-size: 13px;
+        height: auto;
+        padding: 8px;
+    }
+
+    .contest-winners-section {
+        padding: 10px;
+    }
+
+    .content-layout {
+        max-width: 260px;
+    }
+
+    .graphic {
+        min-height: 100px;
+    }
+
+    .faq-header h2 {
+        font-size: 18px;
+    }
+
+    .faq-question {
+        font-size: 12px;
+    }
+
+    .faq-answer {
+        font-size: 12px;
+    }
+}
+
+/*overwrite classes for careerOpportunity*/
+
+#lia-body .bringing_opportunities_section {
+    background: url(/html/assets/careerhubnew_carousel.png) right bottom !important;
+    /* display: flex !important;
+    flex-direction: column-reverse !important; */
+}
+
+#lia-body .slick-slider {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 95% !important;
+}
+
+/*end overwrite classes for careerOpportunity*/
