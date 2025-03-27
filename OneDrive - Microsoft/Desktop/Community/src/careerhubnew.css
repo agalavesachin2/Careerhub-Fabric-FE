@@ -322,8 +322,8 @@
 ============================= */
 .graphic {
     width: 100%;
-    height: 196px;
-    background: url(/html/assets/careerhubnew_Graphic.png), linear-gradient(225deg, #FFFFFF 10.9%, #E8E6DF 100%);
+    height: 187px;
+    /* background: url(/html/assets/careerhubnew_Graphic.png), linear-gradient(225deg, #FFFFFF 10.9%, #E8E6DF 100%); */
     background-size: cover;
     background-position: center;
     border-radius: 8px;
