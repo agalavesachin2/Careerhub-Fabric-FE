@@ -14,7 +14,7 @@ function SuperUserSection({ SubNavigationData }: { SubNavigationData: any }) {
             {/* Button Wrapper */}
             {ctaButtonText && ctaButtonLink && (
               <div className="button-wrapper">  
-                <a href={ctaButtonLink} className="get-started" target="_blank" aria-label="Get Started">
+                <a href={ctaButtonLink} className="get-started" aria-label="Get Started">
                   <span className="get-started-text">{ctaButtonText}</span>
                 </a>
               </div>

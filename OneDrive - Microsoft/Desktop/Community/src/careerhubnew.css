@@ -448,7 +448,7 @@
 
 /* Left Arrow Position */
 .slick-prev {
-    left: -20px !important;
+    left: -35px !important;
 }
 
 /* Right Arrow Fix */
@@ -644,6 +644,7 @@
     .slick-prev, .slick-next {
         width: 40px !important;
         height: 40px !important;
+        top: 32% !important;
     }
 }
 
