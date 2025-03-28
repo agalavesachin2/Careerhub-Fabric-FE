@@ -13,8 +13,8 @@ function HeroBanner({ HeroBannerData }: any) {
     { srcSet: HeroBannerData.unauthBgImgURL480x120, media: "(min-width:480px) and (max-width:629px)" },
     { srcSet: HeroBannerData.unauthBgImgURL640x140, media: "(min-width:630px) and (max-width:1023px)" },
     { srcSet: HeroBannerData.unauthBgImgURL1024x450, media: "(min-width:1024px) and (max-width:1389px)" },
-    { srcSet: HeroBannerData.unauthBgImgURL1440x450, media: "(min-width:1390px) and (max-width:2050px)" },
-    { srcSet: HeroBannerData.unauthBgImgURL1920x450, media: "(min-width:2051px)" }
+    { srcSet: HeroBannerData.unauthBgImgURL1920x450, media: "(min-width:1390px) and (max-width:2050px)" },
+    { srcSet: HeroBannerData.unauthBgImgURL2880x140, media: "(min-width:2051px)" }
   ];
 
   return (
@@ -27,7 +27,7 @@ function HeroBanner({ HeroBannerData }: any) {
             ))}
             <img
               alt="Power BI user groups Hero banner"
-              src={HeroBannerData.unauthBgImgURL1920x450}
+              src={HeroBannerData.unauthBgImgURL2880x140}
             />
           </picture>
 
@@ -40,7 +40,7 @@ function HeroBanner({ HeroBannerData }: any) {
 
                 <a
                   href="https://aka.ms/browsecontests"
-                  target="_blank"
+                  // target="_blank"
                   rel="noopener noreferrer"
                   style={{ textDecoration: "none" }}
                 >

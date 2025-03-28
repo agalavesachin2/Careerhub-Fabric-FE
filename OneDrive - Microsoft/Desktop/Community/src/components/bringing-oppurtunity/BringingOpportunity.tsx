@@ -83,7 +83,7 @@ const BringingOpportunity = ({ BringingOppurtunityCC }: any) => {
             <div 
               className="slide-item" 
               key={index}
-              onClick={() => window.open(storyItem.youtubeURL, "_blank", "noopener,noreferrer")}
+              // onClick={() => window.open(storyItem.youtubeURL, "noopener,noreferrer")}
               style={{ cursor: "pointer" }}
             >
               <SuccessStoryItem

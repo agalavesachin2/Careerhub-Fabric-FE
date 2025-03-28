@@ -30,7 +30,7 @@ function ContestWinners({ CustomCardData }: { CustomCardData: any }) {
         </div>
   
       {/* Button Section */}
-          <a href={winner.btnLink} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
+          <a href={winner.btnLink} rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
             <div className="vector-button-text" style={{ alignItems: 'center', cursor: 'pointer' }}>
               <span>{winner.btnText}</span>
               <img src="/html/assets/careerhubnew_Vector.png" alt="External Link" style={{ marginLeft: '8px' }} />

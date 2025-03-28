@@ -1,14 +1,21 @@
 /*Hero banner - flex class*/
+#lia-body .bringing_opportunities_section {
+    margin: auto !important;
+    padding: 0px !important;
+}
+.lia-top-quilt>.lia-quilt-row-main {
+    max-width: none !important;
+}
 .career-hub-hero-banner {
     position: relative;
-    width: 100%;
+    width: 100vw;
     height: 450px;
     background-color: #FFFFFF;
     display: flex;
 }
 
 .ch-hero-banner {
-    width: 100%;
+    width: 100vw;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -126,7 +133,6 @@
     border-radius: 16px;
     height: 348px;
     padding: 44px;
-    gap: 20px;
     background: #f5f5f5;  /* Added a background for better visibility */
 }
 
@@ -421,14 +427,55 @@
     line-height: 32px;
 }
 /*This is overridden class from careerhub.css for slick arrows.*/
-.slick-prev:before, .slick-next:before {
-    font-family: slick !important;
-    font-size: 20px !important;
-    line-height: 1 !important;
-    opacity: .75 !important;
-    color: #100e0e !important;
-    -webkit-font-smoothing: antialiased !important;
-    -moz-osx-font-smoothing: grayscale !important;
+/* Common Styles for Arrows */
+.slick-prev, .slick-next {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 48px !important;
+    height: 48px !important;
+    background: #FFFFFF !important;
+    box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.08), 
+                0px 4px 6px rgba(0, 0, 0, 0.16) !important;
+    border-radius: 100px !important;
+    border: none !important;
+    cursor: pointer !important;
+    z-index: 10 !important;
+    position: absolute !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+}
+
+/* Left Arrow Position */
+.slick-prev {
+    left: -20px !important;
+}
+
+/* Right Arrow Fix */
+.slick-next {
+    right: 95px !important;
+}
+
+/* Custom Arrow Icons */
+.slick-prev::before, .slick-next::before {
+    content: '' !important;
+    display: block !important;
+    width: 12px !important;
+    height: 12px !important;
+    border: solid #000 !important;
+    border-width: 0 2px 2px 0 !important;
+}
+
+/* Left Arrow */
+.slick-prev::before {
+    transform: rotate(135deg) !important; 
+    margin-left: 4px !important;
+}
+
+/* Right Arrow */
+.slick-next::before {
+    transform: rotate(-45deg) !important;
+    margin-right: 4px !important;
 }
 
 .rectangle-35794 {
@@ -550,21 +597,70 @@
     }
 }
 
-/* #lia-body .lia-top-quilt>.lia-quilt-row-header .lia-quilt-row.lia-quilt-row-top-header {
+#lia-body .lia-top-quilt>.lia-quilt-row-header .lia-quilt-row.lia-quilt-row-top-header {
     margin-bottom: auto !important;
-} */
-#lia-body .lia-quilt-row.lia-quilt-row-header {
-    display: none !important;
 }
+/* #lia-body .lia-quilt-row.lia-quilt-row-header {
+    display: none !important;
+} */
 
 #lia-body .common_pageTitle {
     display: none !important;
 }
 
+#lia-body.lia-user-status-anonymous .lia-top-quilt>.lia-quilt-row-header, #lia-body.lia-user-status-registered
+.lia-top-quilt>.lia-quilt-row-header {
+    margin-bottom: 0px !important;
+}
+.lia-quilt-row>.lia-quilt-column:last-child {
+    min-height: 0px !important;
+}
 
 /* ================================
    Responsive Adjustments - Mobile
 ================================ */
+
+@media (max-width: 1200px) {
+    .lia-top-quilt>.lia-quilt-row-main {
+        padding: 0px !important;
+    }
+}
+
+@media (max-width: 640px) {
+    .slider-container {
+        background-image: none !important;
+    }
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) { /* Tablets */
+    .slick-prev {
+        left: 5px !important;
+    }
+    .slick-next {
+        right: 5px !important;
+    }
+    .slick-prev, .slick-next {
+        width: 40px !important;
+        height: 40px !important;
+    }
+}
+
+@media (max-width: 480px) { /* Mobile */
+    .slick-prev {
+        left: -10px !important;
+    }
+    .slick-next {
+        right: -10px !important;
+    }
+    .slick-prev, .slick-next {
+        width: 35px !important;
+        height: 35px !important;
+        top:32% !important;
+    }
+}
+
 @media (max-width: 1024px) {
     /* Participate Section */
     .participate {
@@ -601,7 +697,6 @@
     }
 
     .content-row {
-        flex-direction: column;
         align-items: center;
         gap: 20px;
     }
@@ -728,9 +823,13 @@
 /*overwrite classes for careerOpportunity*/
 
 #lia-body .bringing_opportunities_section {
-    background: url(/html/assets/careerhubnew_carousel.png) right bottom !important;
-    /* display: flex !important;
-    flex-direction: column-reverse !important; */
+    background: url(/html/assets/careerhubnew_carousel.png) !important;
+    background-size: 100% auto !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: contain !important;
+    background-size: cover !important;
+    background-position: center !important;
 }
 
 #lia-body .slick-slider {

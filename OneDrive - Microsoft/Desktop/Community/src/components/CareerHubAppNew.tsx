@@ -32,7 +32,6 @@ const navItems: IOverflowData = { ...navItemsData };
 const CareerHubAppNew = () => {
   return (
     <div>
-      <PublicPreviewBanner/>
       {HeroBannerData && <HeroBanner HeroBannerData={HeroBannerData.heroData} />}
       
       {/* Pass updated navItems to StickyNav */}
