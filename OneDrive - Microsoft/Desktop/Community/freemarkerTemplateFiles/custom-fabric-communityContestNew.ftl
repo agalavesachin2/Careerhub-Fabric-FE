@@ -26,5 +26,8 @@
 var HeroBannerData = "${HeroBannerData}";
 var SuperUserData = "${SuperUserData}";
 var CustomCardData = "${CustomCardData}";
+
+document.title = "Fabric Community Contests";
+
 </script>
 <script src="${asset.get("/html/assets/careerhubnewfresh.js")}"></script>

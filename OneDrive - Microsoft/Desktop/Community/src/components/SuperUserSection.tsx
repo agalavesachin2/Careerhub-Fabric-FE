@@ -13,9 +13,10 @@ function SuperUserSection({ SubNavigationData }: { SubNavigationData: any }) {
             <p className="participate-description">{description}</p>
             {/* Button Wrapper */}
             {ctaButtonText && ctaButtonLink && (
-              <div className="button-wrapper">  
+              <div>  
                 <a href={ctaButtonLink} className="get-started" aria-label="Get Started">
                   <span className="get-started-text">{ctaButtonText}</span>
+                  <img src="/html/assets/careerhubnew_Vector.png" alt="External Link" style={{ marginLeft: '8px' }} />
                 </a>
               </div>
             )}
