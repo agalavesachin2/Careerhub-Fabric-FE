@@ -35,13 +35,13 @@ const FAQSection: React.FC<FAQSectionProps> = ({ FaqData }) => {
     <div id="faqs">
       <div className="faq-section">
         <div className="faq-header">
-          <h2>Frequently Asked Questions</h2>
+          <h2>Frequently asked questions</h2>
           <div className="faq-buttons">
             <button onClick={expandAll} style={{ marginRight: '10px' }}>
-              Expand All
+              Expand all
             </button>
             <div className='rectangle-35794'></div>
-            <button onClick={collapseAll}>Collapse All</button>
+            <button onClick={collapseAll}>Collapse all</button>
           </div>
         </div>
 
