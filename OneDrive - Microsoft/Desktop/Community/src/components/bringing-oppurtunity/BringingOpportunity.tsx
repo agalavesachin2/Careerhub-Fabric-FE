@@ -64,14 +64,15 @@ const BringingOpportunity = ({ BringingOppurtunityCC }: any) => {
 
   return (
     <div id="getinspired">
-      <div>
-        <h2 className="getinspired-heading">{ChNewinspiredHeading}</h2>
-      </div>
+      
       <div
         className="bringing_opportunities_section"
         role="region"
         aria-label={BOHeading}
       >
+        <div>
+        <h2 className="getinspired-heading">{ChNewinspiredHeading}</h2>
+      </div>
         <div className="bo_heading_wrapper">
           <div className="bo_heading_section">
             <h2 className="bo_heading">{BOHeading}</h2>

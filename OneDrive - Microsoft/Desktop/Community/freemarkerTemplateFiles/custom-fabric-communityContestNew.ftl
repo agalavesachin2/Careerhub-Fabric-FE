@@ -1,16 +1,36 @@
 <head>
     <meta name="description" content="Take part in our community contests and show off your skills. Whether you're a pro or a beginner, there's a contest for everyone." />
     
-    <style>
-        html, body {
-            overflow-x: hidden;
-        }
+  <style>
+html {
+    scroll-behavior: smooth;
+    width: 100%;
+}
 
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-    </style>
+body {
+    overflow-y: scroll;
+    width: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+</style>
+
 
     <link rel="stylesheet" href="${asset.get('/html/assets/careerhub.css')}" />
     <link rel="stylesheet" href="${asset.get('/html/assets/careerhubfresh.css')}" />
@@ -28,6 +48,13 @@ var SuperUserData = "${SuperUserData}";
 var CustomCardData = "${CustomCardData}";
 
 document.title = "Fabric Community Contests";
+window.addEventListener("pageshow", function(event) {
+    if (event.persisted) {
+        console.log("Page was restored from BFCache!");
+        // Apply fixes (e.g., reload styles)
+        document.body.classList.remove("powerbi_rebranding");
+    }
+});
 
 </script>
 <script src="${asset.get("/html/assets/careerhubnewfresh.js")}"></script>

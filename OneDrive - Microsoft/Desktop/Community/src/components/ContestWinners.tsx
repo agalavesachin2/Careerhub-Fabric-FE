@@ -25,8 +25,8 @@ function ContestWinners({ CustomCardData }: { CustomCardData: any }) {
       <div className="text">
         {/* Winner/Project Name */}
         <div className="frame-2018777074">
-          <h3>{winner.name}</h3>
-          <p>{winner.description}</p>
+          <h3 className='contest-winners-text'>{winner.name}</h3>
+          <p style={{paddingBottom: '24px'}}>{winner.description}</p>
         </div>
   
       {/* Button Section */}
