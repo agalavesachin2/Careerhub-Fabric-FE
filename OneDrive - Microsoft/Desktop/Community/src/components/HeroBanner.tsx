@@ -54,11 +54,7 @@ function HeroBanner({ HeroBannerData }: any) {
                     onClick={showPopup}
                   >
                     {HeroBannerData.playVideoBtnText}
-                    <img
-                      alt="Play Button Icon"
-                      src="/html/assets/ch_playbutton_icon.svg"
-                      aria-hidden
-                    />
+                    <img src="/html/assets/careerhubnewHeroVectorWhite.png" alt="External Link" style={{ marginLeft: '8px' }} />
                   </button>
                 </a>
               </div>

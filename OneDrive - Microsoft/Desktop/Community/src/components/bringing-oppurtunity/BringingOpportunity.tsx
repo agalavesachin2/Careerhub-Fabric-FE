@@ -73,12 +73,6 @@ const BringingOpportunity = ({ BringingOppurtunityCC }: any) => {
         <div>
         <h2 className="getinspired-heading">{ChNewinspiredHeading}</h2>
       </div>
-        <div className="bo_heading_wrapper">
-          <div className="bo_heading_section">
-            <h2 className="bo_heading">{BOHeading}</h2>
-            <p className="bo_heading_description">{BOSubHeading}</p>
-          </div>
-        </div>
         <WorkingSlider {...sliderSettings} ref={sliderRef}>
           {BOContent?.map((storyItem: any, index: number) => (
             <div 

@@ -1,60 +1,33 @@
-<head>
-    <meta name="description" content="Take part in our community contests and show off your skills. Whether you're a pro or a beginner, there's a contest for everyone." />
-    
-  <style>
+<#attempt>
+
+<style>
 html {
     scroll-behavior: smooth;
-    width: 100%;
 }
 
 body {
     overflow-y: scroll;
-    width: 100%;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
 }
 </style>
-
-
-    <link rel="stylesheet" href="${asset.get('/html/assets/careerhub.css')}" />
-    <link rel="stylesheet" href="${asset.get('/html/assets/careerhubfresh.css')}" />
-</head>
-
+<link rel="stylesheet" href="${asset.get('/html/assets/careerhub.css')}" />
 <main id="careerhub_root">
 </main>
-<#assign HeroBannerData=coreNode.settings.name.get("customcontent.11_text")?url!"" />
-<#assign SuperUserData=coreNode.settings.name.get("customcontent.19_text")?url!"" />
-<#assign CustomCardData=coreNode.settings.name.get("customcontent.30_text")?url!"" />
+<#assign HeroBannerData=coreNode.settings.name.get("customcontent.21_text")?url!"" />
+<#assign LearnerJourneyData=coreNode.settings.name.get("customcontent.22_text")?url!"" />
+<#assign GroupLearningData=coreNode.settings.name.get("customcontent.23_text")?url!"" />
+<#assign AnnouncementsData=coreNode.settings.name.get("customcontent.24_text")?url!"" />
+<#assign ModernDataRolesCC=coreNode.settings.name.get("customcontent.25_text")?url!"" />
+<#assign BringingOppurtunityCC=coreNode.settings.name.get("customcontent.26_text")?url!"" />
 
 <script>
+var LearnerJourneyData = "${LearnerJourneyData}";
+var GroupLearningData = "${GroupLearningData}";
+var AnnouncementsData = "${AnnouncementsData}";
 var HeroBannerData = "${HeroBannerData}";
-var SuperUserData = "${SuperUserData}";
-var CustomCardData = "${CustomCardData}";
-
-document.title = "Fabric Community Contests";
-window.addEventListener("pageshow", function(event) {
-    if (event.persisted) {
-        console.log("Page was restored from BFCache!");
-        // Apply fixes (e.g., reload styles)
-        document.body.classList.remove("powerbi_rebranding");
-    }
-});
-
+var ModernDataRolesCC = "${ModernDataRolesCC}";
+var BringingOppurtunityCC = "${BringingOppurtunityCC}";
 </script>
-<script src="${asset.get("/html/assets/careerhubnewfresh.js")}"></script>
+<script src="${asset.get('/html/assets/careerhub.js')}"></script>
+
+<#recover>
+</#attempt>

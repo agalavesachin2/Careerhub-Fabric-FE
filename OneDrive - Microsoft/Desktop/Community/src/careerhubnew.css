@@ -92,24 +92,21 @@
 }
 
 .ch-hero-button {
-    display: flex;
+    display: inline-flex !important;
     align-items: center;
     justify-content: center;
-    gap: 4px;
+    gap: 8px !important;
+    align-items: center;
+    justify-content: center;
     padding: 6px 20px;
     width: 174px;
     height: 32px;
     background: #000000;
     color: #FFFFFF;
     font-family: 'Segoe UI', sans-serif;
-    font-size: 14px;
     font-weight: 600;
-    line-height: 20px;
-    border: none;
-    border-radius: 4px;
     cursor: pointer;
-    transition: background 0.3s ease;
-}
+  }
 
 .ch-hero-button:hover {
     background: #333333;
@@ -303,7 +300,7 @@
 .content-row {
     display: flex;
     justify-content: center;
-    gap: 53px;
+    gap: 24px;
     flex-wrap: wrap; /* Enables responsiveness */
     /* padding: 0 20px; */
 }
@@ -429,7 +426,6 @@
     font-size: 24px;
     font-style: normal;
     font-weight: 600;
-    /* line-height: 86px; */
     padding-top: 64px;
     padding-bottom: 24px;
 }
@@ -449,18 +445,29 @@
     cursor: pointer !important;
     z-index: 10 !important;
     position: absolute !important;
-    top: 42% !important;
+    top: 39% !important;
     transform: translateY(-50%) !important;
+}
+
+#lia-body .bringing_opportunities_section .bo_item_wrapper .bo_video_content_section {
+    padding: 48px !important;
+    /* right: -45px !important; */
+}
+
+#lia-body .bringing_opportunities_section .bo_slide_img_section .bo_video_img {
+    padding-bottom: 24px !important;
+    position: relative !important;
+  min-height: 300px !important; 
 }
 
 /* Left Arrow Position */
 .slick-prev {
-    left: -35px !important;
+    left: -22px !important
 }
 
 /* Right Arrow Fix */
 .slick-next {
-    right: 110px !important;
+    right: 103px!important;
 }
 
 /* Custom Arrow Icons */
@@ -619,9 +626,6 @@
 #lia-body .lia-top-quilt>.lia-quilt-row-header .lia-quilt-row.lia-quilt-row-top-header {
     margin-bottom: auto !important;
 }
-/* #lia-body .lia-quilt-row.lia-quilt-row-header {
-    display: none !important;
-} */
 
 #lia-body .common_pageTitle {
     display: none !important;
@@ -638,6 +642,137 @@
    Responsive Adjustments - Mobile
 ================================ */
 
+@media (max-width: 360px) {
+    
+      #lia-body .bringing_opportunities_section .bo_video_content_section p {
+          -webkit-line-clamp: none !important;
+      }
+      #lia-body .bringing_opportunities_section .bo_video_content_section h3 {
+        -webkit-line-clamp: none !important;
+      }
+
+      #lia-body .bringing_opportunities_section .slick-dots li img:hover, #lia-body .bringing_opportunities_section .slick-dots li.slick-active img {
+        border: 5px solid #000 !important;
+      }
+    
+      #lia-body .bringing_opportunities_section .bo_slide_img_section {
+        left: -100px !important;
+    }
+    #lia-body .slick-slider .slick-dots {
+        justify-content: center !important;
+    }
+
+    
+    .bo_item_wrapper {
+        display: flex;
+        flex-direction: column !important;
+        align-items: center;
+        justify-content: center;
+        min-height: 360px;
+      }
+  
+      #lia-body .bringing_opportunities_section .slick-dots li img:hover, #lia-body .bringing_opportunities_section .slick-dots li.slick-active img {
+        border: 5px solid #000 !important;
+      }
+    
+      .bo_video_content_section {
+        order: 1; 
+        padding: 10px;
+      }
+    
+      .bo_slide_img_section {
+        position: relative !important;
+        order: 1; 
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        position: relative !important;
+        min-height: 300px !important; 
+      }
+    
+    .slick-prev, .slick-next {
+        position: absolute !important;
+        width: 35px !important;
+        height: 35px !important;
+        top: 87% !important;
+        transform: translateY(-50%) !important;
+    }
+    .slick-prev {
+        left: 100px !important;
+    }
+    #lia-body .bringing_opportunities_section .slick-next {
+        right: 70px !important;
+    }
+  }
+
+  @media (min-width: 361px) and (max-width: 650px) {
+      
+    #lia-body .bringing_opportunities_section .bo_slide_img_section {
+        left: -100px !important;
+    }
+      /* Make sure image wrapper doesn't push it */
+      .bo_slide_img_section {
+        margin: 0 auto !important;
+        text-align: center;
+        width: 100%;
+        display: flex;
+        justify-content: center !important;
+      }
+
+    #lia-body .slick-slider .slick-dots {
+        justify-content: center !important;
+    }
+
+    
+    .bo_item_wrapper {
+        display: flex;
+        flex-direction: column !important;
+        align-items: center;
+        justify-content: center;
+        min-height: 360px;
+      }
+  
+      #lia-body .bringing_opportunities_section .slick-dots li img:hover, #lia-body .bringing_opportunities_section .slick-dots li.slick-active img {
+        border: 5px solid #000 !important;
+      }
+    
+      .bo_video_content_section {
+        order: 1; 
+        padding: 10px;
+      }
+    
+      .bo_slide_img_section {
+        position: relative !important;
+        order: 1; 
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        position: relative !important;
+        min-height: 300px !important; 
+      }
+    
+      #lia-body .bringing_opportunities_section .bo_video_content_section p {
+        -webkit-line-clamp: none !important;
+    }
+    
+    
+    .slick-prev, .slick-next {
+        position: absolute !important;
+        width: 35px !important;
+        height: 35px !important;
+        top: 44%!important;
+        transform: translateY(-50%) !important;
+    }
+    .slick-prev {
+        left: 100px !important;
+    }
+    #lia-body .bringing_opportunities_section .slick-next {
+        right: 70px !important;
+    }
+  }
+
 @media (max-width: 1200px) {
     .lia-top-quilt>.lia-quilt-row-main {
         padding: 0px !important;
@@ -645,9 +780,6 @@
 }
 
 @media (max-width: 640px) {
-    .slider-container {
-        background-image: none !important;
-    }
     .MinimumWidthContainer {
         overflow-x: hidden;
     }
@@ -656,36 +788,12 @@
 
 /* Responsive Adjustments */
 @media (max-width: 768px) { /* Tablets */
-    .slick-prev {
-        left: -11px !important;
-    }
-    .slick-next {
-        right: 1px !important;
-    }
-    .slick-prev, .slick-next {
-        width: 40px !important;
-        height: 40px !important;
-        top: 21% !important;
-    }
-
     .MinimumWidthContainer {
         overflow-x: hidden;
     }
 }
 
-/* @media (max-width: 480px) { 
-    .slick-prev {
-        left: -10px !important;
-    }
-    .slick-next {
-        right: -10px !important;
-    }
-    .slick-prev, .slick-next {
-        width: 35px !important;
-        height: 35px !important;
-        top:32% !important;
-    }
-} */
+
 
 @media (max-width: 1024px) {
     #lia-body.lia-body .career-hub-hero-banner .ch-hero-banner-content .ch-hero-text-wrapper p {
@@ -698,6 +806,20 @@
 }
 
 @media (max-width: 1024px) {
+    
+    #lia-body .bringing_opportunities_section .bo_slide_img_section .bo_video_img {
+        padding: 16px !important;
+        position: relative !important;
+        min-height: 300px !important; 
+        right: -75px;
+    }
+    .slick-next {
+        right: -13px !important;
+    }
+
+    .slick-prev {
+        left: 25px !important;   
+    }
     /* Participate Section */
     .participate {
         flex-direction: row;   
@@ -743,9 +865,9 @@
         gap: 44px;
     }
 
-    .subheading {
+    /* .subheading {
         white-space: nowrap;
-    }
+    } */
     .content-layout {
         width: 100%;
         max-width: 300px;
@@ -908,9 +1030,14 @@
     display: flex !important;
     flex-direction: column !important;
     width: 95% !important;
+    overflow: visible !important;
 }
 
 #lia-body.lia-body .career-hub-hero-banner .ch-hero-banner {
     max-width: none;
+}
+
+#lia-body .bringing_opportunities_section .slick-dots li img:hover, #lia-body .bringing_opportunities_section .slick-dots li.slick-active img {
+    border: 5px solid #000 !important;
 }
 /*end overwrite classes for careerOpportunity*/
