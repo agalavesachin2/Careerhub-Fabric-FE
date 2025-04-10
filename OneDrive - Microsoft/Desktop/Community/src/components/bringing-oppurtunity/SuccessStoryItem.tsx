@@ -9,7 +9,7 @@ const SuccessStoryItem = (props: any) => {
     useBoolean(false);
 
   return (
-    <div className="bo_item_wrapper" style={{display: 'inline-flex'}}>
+    <div className="bo_item_wrapper">
       <div className="bo_video_content_section">
         <h3 className="bo_video_title">{title}</h3>
         <p className="bo_video_description">{quote}</p>

@@ -449,6 +449,10 @@
     transform: translateY(-50%) !important;
 }
 
+#lia-body .bringing_opportunities_section .bo_item_wrapper {
+    right: -1% !important;
+}
+
 #lia-body .bringing_opportunities_section .bo_item_wrapper .bo_video_content_section {
     padding: 48px !important;
     /* right: -45px !important; */
@@ -462,12 +466,12 @@
 
 /* Left Arrow Position */
 .slick-prev {
-    left: -22px !important
+    left: 28px !important;
 }
 
 /* Right Arrow Fix */
 .slick-next {
-    right: 103px!important;
+    right: 25px!important;
 }
 
 /* Custom Arrow Icons */
@@ -638,140 +642,10 @@
 .lia-quilt-row>.lia-quilt-column:last-child {
     min-height: 0px !important;
 }
+
 /* ================================
    Responsive Adjustments - Mobile
 ================================ */
-
-@media (max-width: 360px) {
-    
-      #lia-body .bringing_opportunities_section .bo_video_content_section p {
-          -webkit-line-clamp: none !important;
-      }
-      #lia-body .bringing_opportunities_section .bo_video_content_section h3 {
-        -webkit-line-clamp: none !important;
-      }
-
-      #lia-body .bringing_opportunities_section .slick-dots li img:hover, #lia-body .bringing_opportunities_section .slick-dots li.slick-active img {
-        border: 5px solid #000 !important;
-      }
-    
-      #lia-body .bringing_opportunities_section .bo_slide_img_section {
-        left: -100px !important;
-    }
-    #lia-body .slick-slider .slick-dots {
-        justify-content: center !important;
-    }
-
-    
-    .bo_item_wrapper {
-        display: flex;
-        flex-direction: column !important;
-        align-items: center;
-        justify-content: center;
-        min-height: 360px;
-      }
-  
-      #lia-body .bringing_opportunities_section .slick-dots li img:hover, #lia-body .bringing_opportunities_section .slick-dots li.slick-active img {
-        border: 5px solid #000 !important;
-      }
-    
-      .bo_video_content_section {
-        order: 1; 
-        padding: 10px;
-      }
-    
-      .bo_slide_img_section {
-        position: relative !important;
-        order: 1; 
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        margin-top: 10px;
-        position: relative !important;
-        min-height: 300px !important; 
-      }
-    
-    .slick-prev, .slick-next {
-        position: absolute !important;
-        width: 35px !important;
-        height: 35px !important;
-        top: 87% !important;
-        transform: translateY(-50%) !important;
-    }
-    .slick-prev {
-        left: 100px !important;
-    }
-    #lia-body .bringing_opportunities_section .slick-next {
-        right: 70px !important;
-    }
-  }
-
-  @media (min-width: 361px) and (max-width: 650px) {
-      
-    #lia-body .bringing_opportunities_section .bo_slide_img_section {
-        left: -100px !important;
-    }
-      /* Make sure image wrapper doesn't push it */
-      .bo_slide_img_section {
-        margin: 0 auto !important;
-        text-align: center;
-        width: 100%;
-        display: flex;
-        justify-content: center !important;
-      }
-
-    #lia-body .slick-slider .slick-dots {
-        justify-content: center !important;
-    }
-
-    
-    .bo_item_wrapper {
-        display: flex;
-        flex-direction: column !important;
-        align-items: center;
-        justify-content: center;
-        min-height: 360px;
-      }
-  
-      #lia-body .bringing_opportunities_section .slick-dots li img:hover, #lia-body .bringing_opportunities_section .slick-dots li.slick-active img {
-        border: 5px solid #000 !important;
-      }
-    
-      .bo_video_content_section {
-        order: 1; 
-        padding: 10px;
-      }
-    
-      .bo_slide_img_section {
-        position: relative !important;
-        order: 1; 
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        margin-top: 10px;
-        position: relative !important;
-        min-height: 300px !important; 
-      }
-    
-      #lia-body .bringing_opportunities_section .bo_video_content_section p {
-        -webkit-line-clamp: none !important;
-    }
-    
-    
-    .slick-prev, .slick-next {
-        position: absolute !important;
-        width: 35px !important;
-        height: 35px !important;
-        top: 44%!important;
-        transform: translateY(-50%) !important;
-    }
-    .slick-prev {
-        left: 100px !important;
-    }
-    #lia-body .bringing_opportunities_section .slick-next {
-        right: 70px !important;
-    }
-  }
 
 @media (max-width: 1200px) {
     .lia-top-quilt>.lia-quilt-row-main {
@@ -779,23 +653,8 @@
     }
 }
 
-@media (max-width: 640px) {
-    .MinimumWidthContainer {
-        overflow-x: hidden;
-    }
-}
-
-
-/* Responsive Adjustments */
-@media (max-width: 768px) { /* Tablets */
-    .MinimumWidthContainer {
-        overflow-x: hidden;
-    }
-}
-
-
-
 @media (max-width: 1024px) {
+    
     #lia-body.lia-body .career-hub-hero-banner .ch-hero-banner-content .ch-hero-text-wrapper p {
         padding-right: 20% !important;
     }
@@ -803,22 +662,23 @@
     .MinimumWidthContainer {
         overflow-x: hidden;
     }
-}
 
-@media (max-width: 1024px) {
-    
     #lia-body .bringing_opportunities_section .bo_slide_img_section .bo_video_img {
         padding: 16px !important;
         position: relative !important;
         min-height: 300px !important; 
         right: -75px;
     }
+
+    #lia-body .bringing_opportunities_section .bo_item_wrapper .bo_video_content_section {
+        left: -26px !important;
+    }
     .slick-next {
-        right: -13px !important;
+        right: -25px !important;
     }
 
     .slick-prev {
-        left: 25px !important;   
+        left: -22px !important;   
     }
     /* Participate Section */
     .participate {
@@ -916,15 +776,21 @@
        
 }
 
-/* ================================
-   Smaller Screens (Mobile)
-================================ */
-@media (max-width: 650px) {
-    .content-layout {
-        max-width: 300px;
+@media (max-width: 1023px) {
+    #lia-body .bringing_opportunities_section .bo_slide_img_section {
+        left: -74px !important;
+        width: 104% !important;
+    }
+    #lia-body .slick-slider .slick-dots {
+        justify-content: center !important;
     }
 }
+
 @media (max-width: 768px) {
+
+    .MinimumWidthContainer {
+        overflow-x: hidden;
+    }
      /* General Adjustments */
      .participate {
         flex-direction: column;   
@@ -964,56 +830,207 @@
         font-size: 13px;
     }
 }
+@media (max-width: 650px) {
+    /* .content-layout {
+        max-width: 300px;
+    } */
 
-/* ================================
-   Very Small Screens (Mobile)
-================================ */
+    /* .bringing_opportunities_section .slick-next, .slick-prev {
+        top: 46% !important;
+    } */
+
+    #lia-body .bringing_opportunities_section .slick-prev {
+        left: 33px !important;
+    }
+
+    #lia-body .bringing_opportunities_section .slick-next {
+        right: 1px !important;
+    }
+}
+
+@media (min-width: 651px) and (max-width: 1021px) {
+    #lia-body .bringing_opportunities_section .slick-prev {
+        left: 34px !important;
+    }
+
+    #lia-body .bringing_opportunities_section .slick-next {
+        right: 3px !important;
+    }
+}
+@media (max-width: 640px) {
+    .MinimumWidthContainer {
+        overflow-x: hidden;
+    }
+}
 @media (max-width: 480px) {
-.participate {
-    padding: 15px;
-}
-
-.participate-content {
-    padding: 10px;
-    border-radius: 10px 10px 0 0;
-}
-
-.how-to-participate {
-    font-size: 20px;
-    line-height: 28px;
-    text-align: justify;
-}
-
-.participate-description {
-    font-size: 13px;
-    text-align: justify;
-}
-
-    .contest-winners-section {
+    .participate {
+        padding: 15px;
+    }
+    
+    .participate-content {
         padding: 10px;
+        border-radius: 10px 10px 0 0;
     }
-
-    .content-layout {
-        max-width: 260px;
+    
+    .how-to-participate {
+        font-size: 20px;
+        line-height: 28px;
+        text-align: justify;
     }
-
-    .graphic {
-        min-height: 100px;
+    
+    .participate-description {
+        font-size: 13px;
+        text-align: justify;
     }
-
-    .faq-header h2 {
-        font-size: 18px;
-    }
-
-    .faq-question {
-        font-size: 12px;
-    }
-
-    .faq-answer {
-        font-size: 12px;
-    }
+    
+        .contest-winners-section {
+            padding: 10px;
+        }
+    
+        .content-layout {
+            max-width: 260px;
+        }
+    
+        .graphic {
+            min-height: 100px;
+        }
+    
+        .faq-header h2 {
+            font-size: 18px;
+        }
+    
+        .faq-question {
+            font-size: 12px;
+        }
+    
+        .faq-answer {
+            font-size: 12px;
+        }
 }
+@media (min-width: 361px) and (max-width: 640px) {
+      
+    #lia-body .bringing_opportunities_section .bo_slide_img_section {
+        left: -100px !important;
+    }
+      /* Make sure image wrapper doesn't push it */
+      .bo_slide_img_section {
+        margin: 0 auto !important;
+        text-align: center;
+        width: 100%;
+        display: flex;
+        justify-content: center !important;
+      }
 
+    #lia-body .slick-slider .slick-dots {
+        justify-content: center !important;
+    }
+
+    
+    .bo_item_wrapper {
+        display: flex;
+        flex-direction: column !important;
+        align-items: center;
+        justify-content: center;
+        min-height: 360px;
+      }
+  
+      #lia-body .bringing_opportunities_section .slick-dots li img:hover, #lia-body .bringing_opportunities_section .slick-dots li.slick-active img {
+        border: 5px solid #000 !important;
+      }
+    
+      .bo_video_content_section {
+        order: 1; 
+        padding: 10px;
+      }
+    
+      .bo_slide_img_section {
+        position: relative !important;
+        order: 1; 
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        position: relative !important;
+        min-height: 300px !important; 
+      }
+    
+      #lia-body .bringing_opportunities_section .bo_video_content_section p {
+        -webkit-line-clamp: none !important;
+    }
+    
+    
+    #lia-body .bringing_opportunities_section .slick-prev, .slick-next {
+        position: absolute !important;
+        width: 35px !important;
+        height: 35px !important;
+        top: 86% !important;
+        transform: translateY(-50%) !important;
+    }
+    #lia-body .bringing_opportunities_section .slick-prev {
+        left: 106px !important;
+    }
+    #lia-body .bringing_opportunities_section .slick-next {
+        right: 142px !important;
+    }
+  }
+
+@media (max-width: 360px) {
+    #lia-body .bringing_opportunities_section .bo_video_content_section p {
+        -webkit-line-clamp: none !important;
+    }
+    #lia-body .bringing_opportunities_section .bo_video_content_section h3 {
+      -webkit-line-clamp: none !important;
+    }
+
+    #lia-body .bringing_opportunities_section .slick-dots li img:hover, #lia-body .bringing_opportunities_section .slick-dots li.slick-active img {
+      border: 5px solid #000 !important;
+    }
+  
+    #lia-body .bringing_opportunities_section .bo_slide_img_section {
+      left: -100px !important;
+  }
+  #lia-body .slick-slider .slick-dots {
+      justify-content: center !important;
+  }
+  
+  .bo_item_wrapper {
+      display: flex;
+      flex-direction: column !important;
+      align-items: center;
+      justify-content: center;
+      min-height: 360px;
+    }
+
+    #lia-body .bringing_opportunities_section .slick-dots li img:hover, #lia-body .bringing_opportunities_section .slick-dots li.slick-active img {
+      border: 5px solid #000 !important;
+    }
+  
+    .bo_video_content_section {
+      order: 1; 
+      padding: 10px;
+    }
+  
+    .bo_slide_img_section {
+      position: relative !important;
+      order: 1; 
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+      position: relative !important;
+      min-height: 300px !important; 
+    }
+  
+    #lia-body .bringing_opportunities_section .slick-prev, .slick-next {
+      top: 86% !important;
+    }
+  #lia-body .bringing_opportunities_section .slick-prev {
+      left: 100px !important;
+  }
+  #lia-body .bringing_opportunities_section .slick-next {
+      right: 70px !important;
+  }
+}
 /*overwrite classes for careerOpportunity*/
 
 #lia-body .bringing_opportunities_section {
