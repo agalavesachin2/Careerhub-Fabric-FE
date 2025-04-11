@@ -8,6 +8,7 @@ html {
 
 body {
     overflow-y: scroll;
+    background-color: #ffffff !important;
   }
 
 img {
